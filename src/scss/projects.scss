@@ -1,0 +1,63 @@
+// Projects page scoped styling
+
+.projects-leave,
+.projects-enter {
+  transition: transform 0.5s var(--easing);
+}
+
+.projects-leave .transition-projects {
+  transform: translateY(-100%);
+}
+
+.projects-leave-active .transition-projects {
+  transition: transform 0.5s var(--easing);
+}
+
+.projects-leave-to .transition-projects {
+  transform: translateY(0);
+}
+
+.projects-leave .content {
+  transform: translateY(0);
+}
+
+.projects-leave-active .content {
+  transition: transform 0.5s var(--easing);
+}
+
+.projects-leave-to .content {
+  transform: translateY(80px);
+}
+
+/* Cover back to top */
+// .projects-enter .transition {
+//     transform: translateY(0);
+// }
+// .projects-enter-active .transition {
+//     transition: transform 0.5s var(--easing);
+// }
+// .projects-enter-to .transition {
+//     transform: translateY(-100%);
+// }
+
+/* Cover down */
+.projects-enter .transition-projects {
+  transform: translateY(0);
+}
+
+.projects-enter .content {
+  transform: translateY(-80px);
+}
+
+.projects-enter-active .transition-projects,
+.projects-enter-active .content {
+  transition: transform 0.5s var(--easing);
+}
+
+.projects-enter-to .transition-projects {
+  transform: translateY(100%);
+}
+
+.projects-enter-to .content {
+  transform: translateY(0);
+}

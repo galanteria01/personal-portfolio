@@ -1,0 +1,63 @@
+// Contact page scoped styling
+
+.contact-leave,
+.contact-enter {
+  transition: transform 0.5s var(--easing);
+}
+
+.contact-leave .transition-contact {
+  transform: translateY(-100%);
+}
+
+.contact-leave-active .transition-contact {
+  transition: transform 0.5s var(--easing);
+}
+
+.contact-leave-to .transition-contact {
+  transform: translateY(0);
+}
+
+.contact-leave .content {
+  transform: translateY(0);
+}
+
+.contact-leave-active .content {
+  transition: transform 0.5s var(--easing);
+}
+
+.contact-leave-to .content {
+  transform: translateY(80px);
+}
+
+/* Cover back to top */
+// .contact-enter .transition {
+//     transform: translateY(0);
+// }
+// .contact-enter-active .transition {
+//     transition: transform 0.5s var(--easing);
+// }
+// .contact-enter-to .transition {
+//     transform: translateY(-100%);
+// }
+
+/* Cover down */
+.contact-enter .transition-contact {
+  transform: translateY(0);
+}
+
+.contact-enter .content {
+  transform: translateY(-80px);
+}
+
+.contact-enter-active .transition-contact,
+.contact-enter-active .content {
+  transition: transform 0.5s var(--easing);
+}
+
+.contact-enter-to .transition-contact {
+  transform: translateY(100%);
+}
+
+.contact-enter-to .content {
+  transform: translateY(0);
+}

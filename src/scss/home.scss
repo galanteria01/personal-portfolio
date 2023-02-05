@@ -1,0 +1,66 @@
+// Home page scoped styling
+
+.home {
+  .home-data {
+    display: flex;
+    align-items: center;
+
+    .home-image {}
+  }
+
+}
+
+@media (max-width: 768px) {
+  .home {
+    .home-data {
+      .home-image {
+        display: none;
+      }
+    }
+  }
+}
+
+// Page load animation
+
+.home-once {
+  opacity: 0;
+}
+
+.home-once-active {
+  transition: all 1s linear 0.3s;
+}
+
+.home-once-to {
+  opacity: 1;
+}
+
+// Page transition animation
+
+// Projects page scoped styling
+
+.home-leave {
+  transform: translateX(0%);
+}
+
+.home-leave-active {
+  transition: all .5s var(--easing);
+}
+
+.home-leave-to {
+  transform: translateX(100%);
+}
+
+.home-enter {
+  transform: translateX(-100%);
+}
+
+.home-enter-active {
+  transition: all .5s var(--easing);
+}
+
+.home-enter-to {
+  transform: translateX(0);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
