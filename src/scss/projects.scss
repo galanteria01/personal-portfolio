@@ -1,3 +1,25 @@
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .projects-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+
+    .projects-card {
+      border: 1px solid #fff;
+    }
+  }
+
+  .projects-button {
+    width: fit-content;
+    padding: 12px 20px;
+  }
+}
+
+
 // Projects page scoped styling
 
 .projects-leave,

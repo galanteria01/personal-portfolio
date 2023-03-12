@@ -46,14 +46,14 @@ h6 {
 section {
   --base-color: #fff;
 
-  width: calc(100% - 16vw);
+  // width: calc(100% - 16vw);
   height: 100vh;
   color: var(--base-color);
   display: flex;
   align-content: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0 14vw;
+  // padding: 0 14vw;
 
   h1 {
     font-size: 4vw;

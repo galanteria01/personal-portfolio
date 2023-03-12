@@ -1,20 +1,27 @@
 // Home page scoped styling
 
 .home {
-  .home-data {
-    display: flex;
-    align-items: center;
+  .home-container {
+    margin: 0 16vw;
 
-    .home-image {}
+    .home-data {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .home-image {}
+    }
   }
 
 }
 
 @media (max-width: 768px) {
   .home {
-    .home-data {
-      .home-image {
-        display: none;
+    .home-container {
+      .home-data {
+        .home-image {
+          display: none;
+        }
       }
     }
   }
